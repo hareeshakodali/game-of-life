@@ -7,7 +7,7 @@ pipeline{
         string(name: 'MAVENGOAL', defaultValue: 'clean package', description: 'enter your maven goal')
     }
     options {
-        timeout(time:30, unit:'Minutes')
+        timeout(time: 30, unit: 'Minutes')
     }
     stages{
         stage('SCM'){
